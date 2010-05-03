@@ -5,14 +5,16 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "inline_tests"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Keeps your tests close to your code}
+    gem.description = %Q{Keeps your tests close to your code. BDD made easy.}
     gem.email = "jeroen@jeevide.nl"
     gem.homepage = "http://github.com/jeroenvandijk/inline_tests"
     gem.authors = ["Jeroen"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "yard", ">= 0"
     gem.add_development_dependency "cucumber", ">= 0"
+    gem.add_dependency "commander"
+    gem.files = FileList['lib/**/*.rb'] + ["bin/inliner.rb"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

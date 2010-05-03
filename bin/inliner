@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+$:.unshift(File.dirname(__FILE__) + '/../lib') unless $:.include?(File.dirname(__FILE__) + '/../lib')
+
+# require File.expand_path("../../commander/lib/commander.rb", File.dirname(__FILE__))
+# 
+# 
+# # module Commands
+#   
+#   # # # def test_joer
+#   # #       i = 10 ** 10
+#   # #       assert_equal(i, ( "1" + "0" *  10).to_i )
+#   # #       assert(false, false)
+#   # #      end
+#   def spec(filename)
+#     require 'inline_tests'
+#     
+#     # parse file
+# 
+#     
+#   end
+# 
+#   # it "should stop" do
+#   #    "test".should == "jeroen"
+#   # end
+#   def dummy
+#     
+#   end
+#   
+# end
+
+
+
+# Commander.run
+
+
+
+require 'inline_tests'
+require File.expand_path(ARGV[0])
+
+
+
+Commander.commands.each do |command|
+  puts command.comment
+  InlineTest.class_eval(command.comment, command.filename, command.line )
+end

@@ -1,4 +1,4 @@
-## MAC OS
+  ## MAC OS
 .DS_Store
 
 ## TEXTMATE
@@ -14,8 +14,10 @@ tmtags
 *.swp
 
 ## PROJECT::GENERAL
+.bundle
 coverage
 rdoc
 pkg
+tmp
 
 ## PROJECT::SPECIFIC
