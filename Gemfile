@@ -1,4 +1,4 @@
-gem "commander", :path => "~/Projects/github/commander"
+gem "rspec"
 
 group :cucumber do
   gem "aruba",     :path => "~/Projects/github/aruba"

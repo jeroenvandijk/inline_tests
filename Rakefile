@@ -7,7 +7,7 @@ begin
     gem.name = "inline_tests"
     gem.summary = %Q{Keeps your tests close to your code}
     gem.description = %Q{Keeps your tests close to your code. BDD made easy.}
-    gem.email = "jeroen@jeevide.nl"
+    gem.email = "jeroen@jeevidee.nl"
     gem.homepage = "http://github.com/jeroenvandijk/inline_tests"
     gem.authors = ["Jeroen"]
     gem.add_development_dependency "rspec", ">= 1.2.9"

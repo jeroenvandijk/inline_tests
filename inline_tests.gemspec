@@ -9,17 +9,24 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jeroen"]
-  s.date = %q{2010-05-02}
-  s.default_executable = %q{inliner}
+  s.date = %q{2010-05-05}
   s.description = %q{Keeps your tests close to your code. BDD made easy.}
-  s.email = %q{jeroen@jeevide.nl}
-  s.executables = ["inliner"]
+  s.email = %q{jeroen@jeevidee.nl}
+  s.executables = ["inliner", "inliner_spec"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
   ]
   s.files = [
-    "lib/inline_tests.rb"
+    "lib/inline_tests.rb",
+     "lib/inline_tests/definitions/base.rb",
+     "lib/inline_tests/definitions/method.rb",
+     "lib/inline_tests/hooks/class.rb",
+     "lib/inline_tests/hooks/method.rb",
+     "lib/inline_tests/hooks/module.rb",
+     "lib/inline_tests/runners/rspec.rb",
+     "lib/inline_tests/runners/test_unit.rb",
+     "lib/inline_tests/suite.rb"
   ]
   s.homepage = %q{http://github.com/jeroenvandijk/inline_tests}
   s.rdoc_options = ["--charset=UTF-8"]

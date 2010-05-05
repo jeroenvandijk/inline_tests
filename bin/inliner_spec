@@ -10,3 +10,5 @@ end
 require 'inline_tests'
 
 require File.expand_path(ARGV[0])
+
+InlineTests::Suite.runner = :rspec
