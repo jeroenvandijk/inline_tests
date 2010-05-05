@@ -1,9 +1,3 @@
-require 'rubygems'
-# require 'bundler'
-# 
-# Bundler.setup(:default)
-# gem 'rspec', '1.3.0'
-
 require 'spec'
 
 module InlineTests
